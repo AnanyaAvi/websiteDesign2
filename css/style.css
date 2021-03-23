@@ -1,0 +1,216 @@
+body{
+			margin:0px;
+			padding:0px;
+		}
+		header{
+			width:100%;
+			height:60px;
+			background-color: tomato;
+			z-index:10;
+			position: fixed;
+		}
+		header strong{
+			font-family: 'Righteous', cursive;
+			font-size: 40px;
+			color:white;
+			margin-left: 80px;
+		}
+		nav{
+			float:right;
+		}
+		a{
+			text-decoration: none;
+			padding:20px;
+			font-family: comic sans MS;
+			font-size:20px;
+			position: relative;
+			top:17px;
+			right:100px;
+			color:white;
+		}
+		.box{
+			background-image: url(../images/beaches.jpeg);
+			background-size: 100% 400px;
+			width:100%;
+			height:370px;
+		}
+		.sub_box{
+			position: absolute;
+			width:100%;
+			background:rgba(0,0,0,0.9);
+			color:white;
+			top:315px;
+		}
+		.sub_box p{
+			margin-left:30px;
+			font-size: 17px;
+		}
+		button{
+			padding:5px;
+			margin:10px;
+			width:150px;
+			background-color:blue;
+			font-family: calibri;
+			font-size:17px;
+			color:white;
+			border:none;
+			cursor: pointer;
+			outline: none;
+			border-radius: 5px;
+		}
+		button:hover{
+			background-color:limegreen;
+		}
+		section{
+			height:380px;
+		}
+		article{
+			width:75%;
+			float:left;
+		}
+		article h2,article p{
+			padding-left:40px;
+			padding-right: 20px;
+		}
+		article h2{
+			font-family: 'Righteous', cursive;
+			text-align: center;
+			font-size:40px;
+		}
+		article p{
+			font-size:15px;
+			font-family:'Comic Neue',cursive;
+			font-weight:bold;
+		}
+		aside{
+			background-color: grey;
+			float:right;
+			width:25%;
+		}
+		.aside_contents{
+			padding:8px;
+			font-family: 'Lobster', cursive; 
+		}
+		.aside_contents i{
+			font-size:25px;
+			margin:5px;
+			padding:5px;
+			cursor: pointer;
+			border:2px solid black;
+		}
+		footer{
+			height:300px;
+		}
+		.fbox{
+			width:30%;
+			height:250px;
+			background-color:white;
+			margin:22px;
+			float:left;
+			border-radius: 10px;
+			box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.7);
+		}
+		.contents{
+			padding: 15px;
+			text-align: justify;
+		}
+		.contents img{
+			height:150px;
+			width:120px;
+		}
+		.footer_copyright{
+			height:50px;
+			padding: 5px;
+			background-color: black;
+		}
+		
+
+@media all and (max-width: 1024px){
+	header{height:40px;}
+	header strong{font-size: 30px;}
+	a{font-size: 15px;top:10px;right:80px;padding:10px;}
+	.aside_contents i{font-size: 20px; margin:2px;}	
+	.fbox{margin:13px; height:180px;}
+	.fbox strong{font-size: 20px;}
+	.fbox p{font-size: 10px;}
+	.fbox li{font-size: 10px;}
+	.contents img{width:60px;height:60px;}
+}
+@media all and (max-width: 768px){
+	header{height:40px;}
+	header strong{font-size: 30px;}
+	a{font-size: 15px;top:10px;right:80px;padding:10px;}
+	article h2{font-size: 30px;}
+	.aside_contents i{font-size: 20px; margin:2px;}	
+	.fbox{margin:13px; height:180px;}
+	.fbox strong{font-size: 20px;}
+	.fbox p{font-size: 10px;}
+	.fbox li{font-size: 10px;}
+	.contents img{width:60px;height:60px;}
+	.aside_contents p{font-size: 10px;}	
+	.aside_contents i{font-size:18px; margin:2px;}	
+	footer{height:320px;}
+	.fbox{margin:10px; height:150px;}
+	.fbox h3{font-size: 15px;}
+	.fbox strong{font-size:13px;}
+	.fbox p{font-size: 10px;}
+	.fbox li{font-size: 10px;}
+	.contents{padding: 5px;}
+	.contents img{width:40px;height:40px;}
+	.footer_copyright{height:30px;}
+	.footer_copyright p{font-size: 11px;}
+}
+@media all and (max-width: 540px){
+	header strong{margin-left: 10px;}
+	a{font-size: 13px;top:8px;right:20px;padding:5px;}
+	article h2{font-size: 20px;}
+	article p{font-size: 14px;}
+	footer{height:350px;}
+	.fbox{margin:8px; height:150px;}
+	.fbox h3{font-size: 10px;}
+	.fbox strong{font-size:9px;}
+	.fbox p{font-size: 8px;}
+	.fbox li{font-size: 8px;}
+	.contents{padding: 5px;}
+}
+@media all and (max-width: 425px){
+	header{height:30px;}
+	header strong{font-size: 20px;margin-left:10px;}
+	a{font-size: 10px;top:5px;right:40px;padding:5px;}
+	.box{height:200px;}
+	.sub_box{top:165px; height:35px;}	
+	.sub_box p{font-size: 12px;margin-left: 10px;}
+	.sub_box button{width:100px;font-size: 12px; padding:2px;margin:8px;}
+	article{width:100%;}	
+	article h2{font-size: 20px;}
+	article p{font-size: 12px;}
+	aside{margin:20px;width:90%;}
+	.aside_contents p{font-size: 10px;}	
+	.aside_contents i{font-size:18px; margin:2px;}	
+	footer{height:700px;}
+	.fbox{margin-right:24px;margin-left:24px; height:100px; width:87%;}
+	.fbox h3{font-size: 15px;}
+	.fbox strong{font-size:10px;}
+	.fbox p{font-size: 7px;}
+	.fbox li{font-size: 7px;}
+	.contents{padding:5px;}
+	.contents img{width:40px;height:40px;}
+	.footer_copyright{height:30px;}
+	.footer_copyright p{font-size: 9px;}
+}
+@media all and (max-width: 375px){
+	a{display: none;}
+	aside{margin:20px;width:90%;}
+	footer{height:750px;}
+}
+@media all and (max-width: 320px){
+	a{display: none;}
+	.sub_box p{font-size: 10px;margin-left: 5px;}
+	.sub_box button{width:80px;font-size: 10px; padding:2px;margin:8px;}
+	aside{margin:15px;width:90%;}
+	footer{height:820px;}
+}
+@media all and (max-width: 280px){
+	.fbox{margin-right:24px;margin-left:24px; height:100px; width:83%;}
+	footer{height:880px;}
+}
